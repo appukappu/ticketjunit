@@ -4,7 +4,7 @@ public class ProjectTest {
     public static void main(String[] args) {
        CompanyDetails end = new CompanyDetails();
        end.companyname="TCS";
-       end.projectname="HospitalManagment";
+       end.companylocation="Hyd";
 
        ProjectDetails hospital = new ProjectDetails("Hospital Managment","FrontEnd",end);
         System.out.println(" front End : "+hospital);

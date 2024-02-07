@@ -1,19 +1,19 @@
 package hospital;
 
 public class CompanyDetails {
-    String projectname;
+    String companylocation;
     String companyname;
 
     @Override
     public String toString() {
         return "  CompanyDetails{" +
-                "projectname='" + projectname + '\'' +
+                "companylocation='" + companylocation + '\'' +
                 ", companyname='" + companyname + '\'' +
                 '}';
     }
 
     public CompanyDetails(){
-        projectname = "Hospial Management";
+    companylocation = "Hyd";
         companyname = "Neoteric";
     }
 
