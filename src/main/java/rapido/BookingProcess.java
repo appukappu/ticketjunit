@@ -20,6 +20,7 @@ return bookingDetails;
         if(bookingDetails.getName().equals(name)){
             System.out.println("Your otp is 1234");
         }
+
         if (bookingDetails.getNoOfPersons() <= 1) {
             bookingDetails.getBike();
             System.out.println("You successfuly booked"+bookingDetails.getBike());
