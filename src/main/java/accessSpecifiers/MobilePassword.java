@@ -8,7 +8,6 @@ public class MobilePassword extends PinNumber {
     private String username;
     private String password;
 
-
     public MobilePassword(String name, String username, String password,int lock,String facelock) {
         super(lock,facelock);
         this.name = name;
@@ -16,15 +15,12 @@ public class MobilePassword extends PinNumber {
         this.password = password;
 
     }
-
     public String getName() {
         return name;
     }
-
     public String getUsername() {
         return username;
     }
-
     public String getPassword() {
         return password;
     }
