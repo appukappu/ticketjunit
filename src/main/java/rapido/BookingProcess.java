@@ -8,7 +8,7 @@ public class BookingProcess {
         }
         if (bookingDetails.getNoOfPersons() <= 2) {
             bookingDetails.getCar();
-            System.out.println("You successfuly boked"+bookingDetails.getCar());
+            System.out.println("You successfuly booked"+bookingDetails.getCar());
         }
         if (bookingDetails.getNoOfPersons() <= 3) {
             bookingDetails.getAuto();
