@@ -22,7 +22,6 @@ public class CarDetails {
     public String getRideprice() {
         return rideprice;
     }
-
     @Override
     public String toString() {
         return "CarDetails{" +

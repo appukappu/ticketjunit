@@ -18,6 +18,7 @@ public class BookingDetails {
     }
 
     public String getBike() {
+
         return bike;
     }
 
@@ -30,10 +31,12 @@ public class BookingDetails {
     }
 
     public int getNoOfPersons() {
+
         return noOfPersons;
     }
 
     public CarDetails getCarDetails() {
+
         return carDetails;
     }
 
