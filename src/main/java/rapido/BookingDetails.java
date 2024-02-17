@@ -1,47 +1,50 @@
 package rapido;
 
-public class BookingDetails {
-    private String bike;
-    private String car;
-    private String auto;
-    private int noOfPersons;
-     private CarDetails carDetails;
-     private String name;
-
-    public BookingDetails(String bike, String car, String auto, int noOfPersons, CarDetails carDetails,String name) {
-        this.bike = bike;
-        this.car = car;
+public class BookingDetails extends  CarDeatails {
+    private int otp;
+    private   String auto;
+    private   String bike;
+    private   int noOfPersons;
+    private   CarDeatails carDeatails;
+    public BookingDetails(String auto, String bike, int noOfPersons,int otp,CarDeatails carDeatails) {
+        super(carDeatails.getCartype(), carDeatails.getCarPrice());
         this.auto = auto;
-        this.noOfPersons=noOfPersons;
-        this.name=name;
-        this.carDetails = carDetails;
+        this.bike = bike;
+        this.carDeatails = carDeatails;
+        this.noOfPersons = noOfPersons;
+        this.otp=otp;
+    }
+    public BookingDetails(String auto, String bike, int noOfPersons,int otp) {
+        this(auto,bike,noOfPersons,otp,new CarDeatails());
     }
 
-    public String getBike() {
-
-        return bike;
-    }
-
-    public String getCar() {
-        return car;
-    }
 
     public String getAuto() {
         return auto;
     }
 
-    public int getNoOfPersons() {
+    public String getBike() {
+        return bike;
+    }
 
+    public CarDeatails getCarDeatails() {
+        return carDeatails;
+    }
+
+    public int getNoOfPersons() {
         return noOfPersons;
     }
-
-    public CarDetails getCarDetails() {
-
-        return carDetails;
+    public int getOtp() {
+        return otp;
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public String toString() {
+        return "BookingDetails{" +
+                "auto='" + auto + '\'' +
+                ", bike='" + bike + '\'' +
+                ", carDeatails=" + carDeatails +
+                ", noOfPersons=" + noOfPersons +
+                '}';
     }
 }
-
